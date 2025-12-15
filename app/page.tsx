@@ -1,20 +1,18 @@
-import { DockDemo } from "@/components/ui/dockComponent";
+import About from "@/components/ui/About";
+import Hero from "@/components/ui/Hero";
+import Projects from "@/components/ui/Projects";
+import Role from "@/components/ui/Role";
+import Stack from "@/components/ui/Stack";
+import React from "react";
 
-export default function Home() {
+export default function page() {
   return (
-    <main className="flex flex-col">
-      <section className="flex items-center justify-center mt-10 sm:mt-30 mx-5 sm:mx-120  p-4 rounded-md">
-        <p className="text-[22px] sm:text-3xl text-white">
-          Prince, Amanor. creating cool software that makes cool people&apos;s
-          life easier. Junior Fullstack Engineer, unsatisfiably curious about
-          beautiful interfaces and relentlessly devoted to fine, detailed
-          polished functionalities.
-        </p>
-      </section>
-
-      <section className="fixed bottom-4 left-1/4 sm:left-[800px]">
-        <DockDemo />
-      </section>
+    <main className="min-h-screen overflow-hidden overflow-y-auto">
+      <Hero />
+      <Role />
+      <About />
+      <Stack />
+      <Projects />
     </main>
   );
 }

@@ -1,153 +1,87 @@
-"use client"
+import Box from "./Box";
 
-import React, { PropsWithChildren, useRef } from "react"
-import { cva, type VariantProps } from "class-variance-authority"
-import {
-  motion,
-  MotionValue,
-  useMotionValue,
-  useSpring,
-  useTransform,
-} from "motion/react"
-import type { MotionProps } from "motion/react"
+import { Press_Start_2P } from "next/font/google";
 
-import { cn } from "@/lib/utils"
+const pixel = Press_Start_2P({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-pixel",
+  display: "swap",
+});
 
-export interface DockProps extends VariantProps<typeof dockVariants> {
-  className?: string
-  iconSize?: number
-  iconMagnification?: number
-  disableMagnification?: boolean
-  iconDistance?: number
-  direction?: "top" | "middle" | "bottom"
-  children: React.ReactNode
-}
+const boxItems = [
+  {
+    id: "1",
+    name: "Pak.",
+    className: `bg-amber-400 text-white text-xl h-[85px] border-0  bg-black hover:text-white ${pixel.className} tracking-tighter  `,
+    main: true,
+  },
+  {
+    id: "2",
+    name: "Role",
+    main: true,
+  },
+  {
+    id: "3",
+    name: "About Me",
+    main: true,
+  },
+  {
+    id: "4",
+    name: "Tech Stack",
+    main: true,
+  },
+  {
+    id: "5",
+    name: "Projects",
+    className: `bg-yellow-300/60 text-black text-[10px] h-[85px] border-0 hover:bg-amber-300 hover:text-black ${pixel.className} tracking-tighter antialiased`,
+    main: true,
+  },
+];
 
-const DEFAULT_SIZE = 40
-const DEFAULT_MAGNIFICATION = 60
-const DEFAULT_DISTANCE = 140
-const DEFAULT_DISABLEMAGNIFICATION = false
-
-const dockVariants = cva(
-  "supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 mx-auto mt-8 flex h-[58px] w-max items-center justify-center gap-2 rounded-2xl border p-2 backdrop-blur-md"
-)
-
-const Dock = React.forwardRef<HTMLDivElement, DockProps>(
-  (
-    {
-      className,
-      children,
-      iconSize = DEFAULT_SIZE,
-      iconMagnification = DEFAULT_MAGNIFICATION,
-      disableMagnification = DEFAULT_DISABLEMAGNIFICATION,
-      iconDistance = DEFAULT_DISTANCE,
-      direction = "middle",
-      ...props
-    },
-    ref
-  ) => {
-    const mouseX = useMotionValue(Infinity)
-
-    const renderChildren = () => {
-      return React.Children.map(children, (child) => {
-        if (
-          React.isValidElement<DockIconProps>(child) &&
-          child.type === DockIcon
-        ) {
-          return React.cloneElement(child, {
-            ...child.props,
-            mouseX: mouseX,
-            size: iconSize,
-            magnification: iconMagnification,
-            disableMagnification: disableMagnification,
-            distance: iconDistance,
-          })
-        }
-        return child
-      })
-    }
-
-    return (
-      <motion.div
-        ref={ref}
-        onMouseMove={(e) => mouseX.set(e.pageX)}
-        onMouseLeave={() => mouseX.set(Infinity)}
-        {...props}
-        className={cn(dockVariants({ className }), {
-          "items-start": direction === "top",
-          "items-center": direction === "middle",
-          "items-end": direction === "bottom",
-        })}
-      >
-        {renderChildren()}
-      </motion.div>
-    )
-  }
-)
-
-Dock.displayName = "Dock"
-
-export interface DockIconProps
-  extends Omit<MotionProps & React.HTMLAttributes<HTMLDivElement>, "children"> {
-  size?: number
-  magnification?: number
-  disableMagnification?: boolean
-  distance?: number
-  mouseX?: MotionValue<number>
-  className?: string
-  children?: React.ReactNode
-  props?: PropsWithChildren
-}
-
-const DockIcon = ({
-  size = DEFAULT_SIZE,
-  magnification = DEFAULT_MAGNIFICATION,
-  disableMagnification,
-  distance = DEFAULT_DISTANCE,
-  mouseX,
-  className,
-  children,
-  ...props
-}: DockIconProps) => {
-  const ref = useRef<HTMLDivElement>(null)
-  const padding = Math.max(6, size * 0.2)
-  const defaultMouseX = useMotionValue(Infinity)
-
-  const distanceCalc = useTransform(mouseX ?? defaultMouseX, (val: number) => {
-    const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 }
-    return val - bounds.x - bounds.width / 2
-  })
-
-  const targetSize = disableMagnification ? size : magnification
-
-  const sizeTransform = useTransform(
-    distanceCalc,
-    [-distance, 0, distance],
-    [size, targetSize, size]
-  )
-
-  const scaleSize = useSpring(sizeTransform, {
-    mass: 0.1,
-    stiffness: 150,
-    damping: 12,
-  })
-
+export default function Dock() {
   return (
-    <motion.div
-      ref={ref}
-      style={{ width: scaleSize, height: scaleSize, padding }}
-      className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center rounded-full",
-        disableMagnification && "hover:bg-muted-foreground transition-colors",
-        className
-      )}
-      {...props}
+    <section
+      className=" fixed
+  bottom-6
+  left-1/2
+  -translate-x-1/2
+  z-50
+  animate-fade-up
+  animation-delay-1000"
     >
-      <div>{children}</div>
-    </motion.div>
-  )
+      <div
+        className="
+    bg-black/30
+    backdrop-blur-md
+    border border-white/10
+    shadow-lg
+    w-[600px]
+    h-[100px]
+    rounded-2xl
+    px-2
+    flex
+    items-center
+  "
+      >
+        <div className="flex w-full items-center justify-between">
+          {/* First box */}
+          <Box box={boxItems[0]} className={boxItems[0].className} />
+
+          {/* Middle boxes */}
+          <div className="flex items-center gap-3 bg-black/60 h-[90px] mx-2 px-2 rounded-2xl">
+            {boxItems.slice(1, -1).map((box) => (
+              <Box key={box.id} box={box} />
+            ))}
+          </div>
+
+          {/* Last box */}
+          <Box
+            box={boxItems[boxItems.length - 1]}
+            className={boxItems[4].className}
+          />
+        </div>
+      </div>
+    </section>
+  );
 }
-
-DockIcon.displayName = "DockIcon"
-
-export { Dock, DockIcon, dockVariants }
