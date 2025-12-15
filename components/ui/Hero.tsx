@@ -1,8 +1,9 @@
 "use client";
 
-import Shuffle from "../Shuffle";
-import Dock from "./Dock";
-import Navbar from "./Navbar";
+import Shuffle from "@/components/Shuffle";
+
+import Navbar from "@/components/ui/Navbar";
+import Dock from "@/components/ui/Dock";
 import { Press_Start_2P } from "next/font/google";
 
 const pixel = Press_Start_2P({
@@ -59,7 +60,7 @@ export default function Hero() {
       </section>
       <section className="p-5">
         <h2 className={`text-center ${pixel.className} tracking-tighter`}>
-          Accra, Ghana.
+          Accra, Ghana .
         </h2>
       </section>
       <Dock />

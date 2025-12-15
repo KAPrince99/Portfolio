@@ -1,4 +1,4 @@
-import Box from "./Box";
+import Box from "@/components/ui/Box";
 
 import { Press_Start_2P } from "next/font/google";
 
