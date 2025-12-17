@@ -50,7 +50,7 @@ export default function About() {
   return (
     <main
       id="about"
-      className={`py-5 md:py-10 flex min-h-screen overflow-x-hidden ${pixel.className} animate-fade-up animation-delay-200`}
+      className={`mt-5 md:py-10 flex min-h-screen overflow-x-hidden ${pixel.className} animate-fade-up animation-delay-200`}
     >
       {/* Outer Section: mx-2 on mobile, mx-10 on desktop */}
       <section className="mx-2 md:mx-10 py-5 md:py-10 bg-black/60 flex-1 flex flex-col text-white rounded-2xl">

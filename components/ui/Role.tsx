@@ -15,7 +15,7 @@ export default function Role() {
   return (
     <main
       id="role"
-      className={`py-5 md:py-10 flex min-h-screen overflow-x-hidden ${pixel.className}`}
+      className={`mt-5 md:py-10 flex min-h-screen overflow-x-hidden ${pixel.className}`}
     >
       {/* Outer container: reduce margins on mobile */}
       <section className="mx-2 md:mx-10 py-5 md:py-10 bg-black/60 flex-1 flex flex-col text-white rounded-2xl">
