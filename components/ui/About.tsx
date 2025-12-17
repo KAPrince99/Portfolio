@@ -50,16 +50,18 @@ export default function About() {
   return (
     <main
       id="about"
-      className={`py-10  flex m-h-screen overflow-y-auto ${pixel.className} animate-fade-up animation-delay-200`}
+      className={`py-10 flex min-h-screen overflow-x-hidden ${pixel.className} animate-fade-up animation-delay-200`}
     >
-      {/*First Inner */}
-      <section className="mx-10 py-10 bg-black/60 flex-1 flex-col text-white rounded-2xl">
-        {/*second Inner */}
-        <section className="mx-10 p-10 bg-yellow-300/60 rounded-xl">
+      {/* Outer Section: mx-2 on mobile, mx-10 on desktop */}
+      <section className="mx-2 md:mx-10 py-5 md:py-10 bg-black/60 flex-1 flex flex-col text-white rounded-2xl">
+        {/* Inner Section: p-4 on mobile, p-10 on desktop */}
+        <section className="mx-2 md:mx-10 p-4 md:p-10 bg-yellow-300/60 rounded-xl">
           <PakLayer name="about" />
-          <section className="flex flex-col items-center justify-center space-y-10 max-w-7xl text-black/60 text-md  tracking-tight my-10">
-            {passages.map((passaage) => (
-              <PassageCard key={passaage.id} content={passaage.content} />
+
+          {/* Passage Container: max-width and centering */}
+          <section className="flex flex-col items-center justify-center space-y-8 md:space-y-10 max-w-4xl mx-auto text-black/60 my-10 px-2">
+            {passages.map((passage) => (
+              <PassageCard key={passage.id} content={passage.content} />
             ))}
           </section>
         </section>
