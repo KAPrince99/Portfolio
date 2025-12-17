@@ -26,7 +26,7 @@ export default function Hero() {
       </section>
 
       {/* Date Header */}
-      <section className="p-6 md:p-10">
+      <section className="my-5 md:my-8">
         <h2
           className={`text-center ${pixel.className} tracking-tighter text-[10px] md:text-base`}
         >
@@ -35,8 +35,8 @@ export default function Hero() {
       </section>
 
       {/* Main Name Sections */}
-      <div className="grow flex flex-col justify-center px-1">
-        <section className="flex justify-center items-center">
+      <div className="flex flex-col justify-center items-center px-1 my-5 md:my-8 gap-2 md:gap-4">
+        <section className="flex justify-center items-start">
           <Shuffle
             text="Prince Amanor"
             shuffleDirection="right"
@@ -52,7 +52,7 @@ export default function Hero() {
           />
         </section>
 
-        <section className="flex justify-center items-center mt-2">
+        <section className="flex justify-center items-start mt-2">
           <Shuffle
             text="Kabutey"
             shuffleDirection="right"
@@ -66,7 +66,7 @@ export default function Hero() {
       </div>
 
       {/* Location Footer */}
-      <section className="p-8 md:p-5">
+      <section className="">
         <h2
           className={`text-center ${pixel.className} tracking-tighter text-[10px] md:text-base`}
         >

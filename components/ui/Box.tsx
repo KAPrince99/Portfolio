@@ -30,7 +30,7 @@ const boxVariants: Variants = {
     filter: "brightness(1.1)",
     transition: { type: "spring", stiffness: 400, damping: 17 },
   },
-  tap: { scale: 0.95 }, // Vital for mobile feedback
+  tap: { scale: 0.95 },
 };
 
 export default function Box({ className, box, onClick }: Props) {
@@ -42,8 +42,12 @@ export default function Box({ className, box, onClick }: Props) {
       whileHover="hover"
       whileTap="tap"
       className={cn(
-        "w-[110px] h-[75px] rounded-xl flex items-center justify-center",
-        "text-[10px] tracking-tighter antialiased cursor-pointer font-sans",
+        // Responsive Width and Height: Smaller on mobile, standard on desktop
+        "w-[75px] h-[55px] sm:w-[90px] sm:h-[65px] md:w-[110px] md:h-[75px]",
+        // Responsive Text: 8px on small mobile to prevent "Projects" from breaking
+        "text-[7px] sm:text-[9px] md:text-[10px]",
+        "rounded-xl flex items-center justify-center",
+        "tracking-tighter antialiased cursor-pointer font-sans",
         "bg-black/60 text-gray-200 border border-white/50",
         "transition-colors duration-200",
         pixel.className,
