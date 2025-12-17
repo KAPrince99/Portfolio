@@ -15,24 +15,30 @@ export default function Role() {
   return (
     <main
       id="role"
-      className={`mt-5 md:py-10 flex min-h-screen overflow-x-hidden ${pixel.className}`}
+      className={`mt-5 md:py-5 lg:py-10 flex min-h-screen overflow-x-hidden ${pixel.className} animate-fade-up animation-delay-200`}
     >
       {/* Outer container: reduce margins on mobile */}
-      <section className="mx-2 md:mx-10 py-5 md:py-10 bg-black/60 flex-1 flex flex-col text-white rounded-2xl">
+      <section className="mx-2 md:mx-5 lg:mx-10 py-2 md:py-5 lg:py-10 bg-black/60 flex-1 flex flex-col text-white rounded-2xl">
         {/* Inner container: reduce padding on mobile */}
-        <section className="mx-2 md:mx-10 p-4 md:p-10 bg-yellow-300/60 rounded-xl">
+        <section className="mx-2 md:mx-5 lg:mx-10 p-4 lg:p-10 bg-yellow-300/60 rounded-xl">
           <PakLayer name="role" />
 
           <section className="flex items-center justify-start mt-10 md:mt-20">
             <Shuffle
               text="Frontend creative"
-              // Responsive text size: 30px to 85px
-              className="text-left text-[30px] sm:text-[50px] md:text-[85px] leading-none font-semibold uppercase tracking-tighter text-black/60 z-10"
-              // ... other props
+              shuffleDirection="right"
+              duration={1.15}
+              animationMode="evenodd"
+              shuffleTimes={1}
+              stagger={0.03}
+              threshold={0.1}
+              triggerOnce={true}
+              triggerOnHover={true}
+              respectReducedMotion={true}
+              className="text-left text-[33px] sm:text-[50px] md:text-[70px] lg:text-[85px] leading-none font-semibold uppercase tracking-tighter text-black/60 z-10"
             />
           </section>
 
-          {/* Changed flex to flex-col on mobile */}
           <section className="flex flex-col lg:flex-row items-start justify-between text-black/60 gap-10">
             <div className="flex-1 my-5 md:my-10 order-2 lg:order-1">
               <h1 className="tracking-tight text-lg md:text-xl font-semibold leading-relaxed">
