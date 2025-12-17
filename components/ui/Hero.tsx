@@ -48,7 +48,7 @@ export default function Hero() {
             triggerOnce={true}
             triggerOnHover={true}
             respectReducedMotion={true}
-            className={`text-center text-[33px] sm:text-[60px] md:text-[90px] lg:text-[120px] leading-none font-semibold uppercase tracking-tighter bg-clip-text animate-fade-up animation-delay-200 ${pixel.className}`}
+            className={`text-center text-[60px] sm:text-[60px] md:text-[90px] lg:text-[120px] leading-none font-semibold uppercase tracking-tighter bg-clip-text animate-fade-up animation-delay-200 ${pixel.className}`}
           />
         </section>
 
@@ -60,7 +60,7 @@ export default function Hero() {
             animationMode="evenodd"
             shuffleTimes={1}
             tag="h1"
-            className={`text-center text-[33px] sm:text-[60px] md:text-[90px] lg:text-[120px] leading-none font-semibold uppercase tracking-tighter bg-clip-text animate-fade-up animation-delay-600 ${pixel.className} `}
+            className={`text-center text-[60px] sm:text-[60px] md:text-[90px] lg:text-[120px] leading-none font-semibold uppercase tracking-tighter bg-clip-text animate-fade-up animation-delay-600 ${pixel.className} `}
           />
         </section>
       </div>
