@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav className="bg-personal-two h-[60px] md:h-[60px] flex justify-center items-center px-4 ">
       <section className="w-full max-w-[700px] flex justify-around items-center gap-4">
         <Link
-          href="linkedin.com"
+          href="https://www.linkedin.com/in/prince-amanor-103368177/"
           target="_blank"
           rel="noopener noreferrer"
           className={`${pixel.className} tracking-tighter text-[8px] sm:text-[10px] md:text-[12px] underline cursor-pointer hover:opacity-80 transition-opacity`}
@@ -21,7 +21,7 @@ export default function Navbar() {
           LinkedIn
         </Link>
         <a
-          href="github.com"
+          href="https://github.com/KAPrince99"
           target="_blank"
           rel="noopener noreferrer"
           className={`${pixel.className} tracking-tighter text-[8px] sm:text-[10px] md:text-[12px] underline cursor-pointer hover:opacity-80 transition-opacity`}
