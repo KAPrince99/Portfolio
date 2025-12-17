@@ -9,15 +9,19 @@ const pixel = Press_Start_2P({
 
 export default function Navbar() {
   return (
-    <section className="bg-personal-two h-[80px] flex justify-center items-center">
+    <main className="bg-personal-two h-[80px]  flex justify-center items-center">
       <section className="w-full md:w-[700px] flex justify-around items-center">
-        <div className={`${pixel.className} tracking-tighter text-[10px]`}>
+        <div
+          className={`${pixel.className} tracking-tighter text-[10px] underline cursor-pointer`}
+        >
           LinkedIn
         </div>
-        <div className={`${pixel.className} tracking-tighter text-[10px]`}>
+        <div
+          className={`${pixel.className} tracking-tighter text-[10px] underline cursor-pointer`}
+        >
           GitHub
         </div>
       </section>
-    </section>
+    </main>
   );
 }

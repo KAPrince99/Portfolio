@@ -15,7 +15,7 @@ const pixel = Press_Start_2P({
 
 export default function Hero() {
   return (
-    <section className="my-4">
+    <main id="hero" className="min-h-screen">
       <Navbar />
       <section className="p-5">
         <div className="bg-orange-500 w-20 h-25  animate-fade-up animation-delay-1200"></div>
@@ -63,7 +63,8 @@ export default function Hero() {
           Accra, Ghana .
         </h2>
       </section>
+
       <Dock />
-    </section>
+    </main>
   );
 }
