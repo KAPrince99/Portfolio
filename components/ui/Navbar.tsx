@@ -1,4 +1,5 @@
 import { Press_Start_2P } from "next/font/google";
+import Link from "next/link";
 
 const pixel = Press_Start_2P({
   weight: "400",
@@ -9,19 +10,25 @@ const pixel = Press_Start_2P({
 
 export default function Navbar() {
   return (
-    <main className="bg-personal-two h-[80px]  flex justify-center items-center">
-      <section className="w-full md:w-[700px] flex justify-around items-center">
-        <div
-          className={`${pixel.className} tracking-tighter text-[10px] underline cursor-pointer`}
+    <nav className="bg-personal-two h-[60px] md:h-[60px] flex justify-center items-center px-4 ">
+      <section className="w-full max-w-[700px] flex justify-around items-center gap-4">
+        <Link
+          href="linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${pixel.className} tracking-tighter text-[8px] sm:text-[10px] md:text-[12px] underline cursor-pointer hover:opacity-80 transition-opacity`}
         >
           LinkedIn
-        </div>
-        <div
-          className={`${pixel.className} tracking-tighter text-[10px] underline cursor-pointer`}
+        </Link>
+        <a
+          href="github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${pixel.className} tracking-tighter text-[8px] sm:text-[10px] md:text-[12px] underline cursor-pointer hover:opacity-80 transition-opacity`}
         >
           GitHub
-        </div>
+        </a>
       </section>
-    </main>
+    </nav>
   );
 }
