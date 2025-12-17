@@ -10,24 +10,33 @@ const pixel = Press_Start_2P({
 
 export default function Navbar() {
   return (
-    <nav className="bg-personal-two h-[60px] md:h-[60px] flex justify-center items-center px-4 ">
-      <section className="w-full max-w-[700px] flex justify-around items-center gap-4">
-        <Link
-          href="https://www.linkedin.com/in/prince-amanor-103368177/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${pixel.className} tracking-tighter text-[8px] sm:text-[10px] md:text-[12px] underline cursor-pointer hover:opacity-80 transition-opacity`}
+    <nav className="w-full bg-personal-two h-[70px] md:h-[90px] flex justify-center items-center px-6 sticky top-0 z-50">
+      <section className="w-full max-w-[1440px] flex justify-between items-center">
+        {/* Optional Logo/Home placeholder */}
+        <div
+          className={`${pixel.className} text-[10px] hidden sm:block opacity-50`}
         >
-          LinkedIn
-        </Link>
-        <a
-          href="https://github.com/KAPrince99"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${pixel.className} tracking-tighter text-[8px] sm:text-[10px] md:text-[12px] underline cursor-pointer hover:opacity-80 transition-opacity`}
-        >
-          GitHub
-        </a>
+          PORTFOLIO./25
+        </div>
+
+        <div className="flex gap-8 md:gap-12">
+          <Link
+            href="https://www.linkedin.com/in/prince-amanor-103368177/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${pixel.className} tracking-tighter text-[8px] sm:text-[10px] md:text-[14px] 2xl:text-lg underline hover:text-orange-500 transition-colors`}
+          >
+            LinkedIn
+          </Link>
+          <a
+            href="https://github.com/KAPrince99"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${pixel.className} tracking-tighter text-[8px] sm:text-[10px] md:text-[14px] 2xl:text-lg underline hover:text-orange-500 transition-colors`}
+          >
+            GitHub
+          </a>
+        </div>
       </section>
     </nav>
   );

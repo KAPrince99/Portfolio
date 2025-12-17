@@ -50,15 +50,12 @@ export default function About() {
   return (
     <main
       id="about"
-      className={`mt-5 md:py-5 lg:py-10 flex min-h-screen overflow-x-hidden ${pixel.className} animate-fade-up animation-delay-200`}
+      className={`mt-5 md:py-5 lg:py-10 flex min-h-screen  overflow-x-hidden ${pixel.className} animate-fade-up animation-delay-200`}
     >
-      {/* Outer Section: mx-2 on mobile, mx-10 on desktop */}
       <section className="mx-2 md:mx-5 lg:mx-10 py-2 md:py-5 lg:py-10 bg-black/60 flex-1 flex flex-col text-white rounded-2xl">
-        {/* Inner Section: p-4 on mobile, p-10 on desktop */}
         <section className="mx-2 md:mx-5 lg:mx-10 p-4 lg:p-10 bg-yellow-300/60 rounded-xl">
           <PakLayer name="about" />
 
-          {/* Passage Container: max-width and centering */}
           <section className="flex flex-col items-center justify-center space-y-8 md:space-y-10 max-w-4xl mx-auto text-black/60 my-10 px-2">
             {passages.map((passage) => (
               <PassageCard key={passage.id} content={passage.content} />
