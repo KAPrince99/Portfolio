@@ -63,7 +63,7 @@ export default function Hero() {
         </section>
       </div>
 
-      <section className="w-full flex flex-col py-5 md:py-0 md:flex-row  justify-center md:justify-between items-start  xl:max-w-[1800px] mx-auto gap-8 px-5 md:px-8 lg:px-10">
+      <section className="w-full flex flex-col py-5 md:py-0 md:flex-row  justify-center md:justify-between md:items-start  xl:max-w-[1800px] mx-auto gap-8 px-5 md:px-8 lg:px-10">
         {/* Text Content */}
         <div className="animate-fade-up animation-delay-1000 group">
           <div className="flex items-center gap-3 mb-0 md:mb-1">
@@ -86,7 +86,7 @@ export default function Hero() {
         </div>
 
         {/* Brutalist Orange Block */}
-        <div className="animate-fade-up animation-delay-1000 group">
+        <div className=" ml-15 animate-fade-up animation-delay-1000 group">
           <div className="flex items-center gap-3 mb-0 md:mb-1">
             <h1 className="text-base md:text-lg lg:text-2xl  font-light tracking-tight text-black/80">
               RECENT PROJECT
