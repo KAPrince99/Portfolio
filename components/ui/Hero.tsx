@@ -107,13 +107,13 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="mt-auto mb-10">
+      {/* <section className="mt-auto mb-10">
         <h2
           className={`text-center ${pixel.className} tracking-tighter text-[10px] md:text-base 2xl:text-xl animate-fade-up animation-delay-1200`}
         >
           Accra, Ghana.
         </h2>
-      </section>
+      </section> */}
 
       <div className="pb-20 md:pb-10 w-full flex justify-center items-center">
         <Dock />
