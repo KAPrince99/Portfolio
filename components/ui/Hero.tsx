@@ -22,10 +22,10 @@ export default function Hero() {
       <Navbar />
 
       <section className="w-full p-4 md:p-5">
-        <div className="bg-orange-500 w-12 h-16 md:w-20 md:h-25 animate-fade-up animation-delay-1200"></div>
+        <div className="bg-personal-one w-12 h-16 md:w-20 md:h-25 animate-fade-up animation-delay-1200"></div>
       </section>
 
-      <section className="my-5 md:my-8">
+      <section className="my-5 md:my-8 animate-fade-up animation-delay-1000 group">
         <h2
           className={`text-center ${pixel.className} tracking-tighter text-[10px] 2xl:text-xl md:text-base`}
         >
@@ -64,7 +64,7 @@ export default function Hero() {
       </div>
 
       <section className="w-full flex flex-col py-5 md:py-0 md:flex-row  justify-center md:justify-between md:items-start  xl:max-w-[1800px] mx-auto gap-8 px-5 md:px-8 lg:px-10">
-        {/* Text Content */}
+        {/* COLLABORATION */}
         <div className="animate-fade-up animation-delay-1000 group">
           <div className="flex items-center gap-3 mb-0 md:mb-1">
             <h1 className="text-base md:text-lg lg:text-2xl  font-light tracking-tight text-black/80">
@@ -80,12 +80,12 @@ export default function Hero() {
             >
               princeamanorkabutey@gmail.com
             </a>
-            {/* Fixed Underline Logic: added 'group' to parent and fixed translate */}
+
             <span className="absolute bottom-0 left-0 w-full h-[2px] md:h-[3px] bg-orange-500 transform translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
           </div>
         </div>
 
-        {/* Brutalist Orange Block */}
+        {/* RECENT WORK */}
         <div className=" ml-15 animate-fade-up animation-delay-1000 group">
           <div className="flex items-center gap-3 mb-0 md:mb-1">
             <h1 className="text-base md:text-lg lg:text-2xl  font-light tracking-tight text-black/80">

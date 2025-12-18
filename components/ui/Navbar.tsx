@@ -40,14 +40,17 @@ export default function Navbar() {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="fixed top-0 left-0 w-full bg-personal-two/90 backdrop-blur-md h-[70px] md:h-[90px] flex justify-center items-center px-6 z-[100] border-b border-black/5 "
+      className="fixed top-0 left-0 w-full bg-personal-one backdrop-blur-md h-[70px] md:h-[90px] flex justify-center items-center px-6 z-100 border-b border-black/5 "
     >
-      <section className="w-full max-w-[1440px] flex justify-between items-center">
+      <section className="w-full max-w-[1440px] flex justify-between items-center  animate-fade-down animation-delay-1400 group">
         {/* Logo Section */}
         <div
-          className={`${pixel.className} text-[10px] hidden sm:block opacity-50`}
+          className={`${pixel.className} md:text-xl lg:text-3xl hidden sm:block opacity-50`}
         >
-          PORTFOLIO./25
+          <span className="text-black md:text-2xl lg:text-4xl bg-orange-600 px-2 py-2">
+            FRONTEND
+          </span>{" "}
+          CREATIVE
         </div>
 
         {/* Links Section */}
