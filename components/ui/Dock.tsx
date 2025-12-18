@@ -45,7 +45,7 @@ export default function Dock() {
     lenis?.scrollTo(`#${id}`, {
       offset: 0, // Adjust this if you have a fixed header (e.g., -80)
       duration: 1.5, // Matches your smooth scroll feel
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // High-end "out-expo" easing
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // High-end "out-expo" easing
       immediate: false, // Set to true if you want it to jump without animation
     });
   };
