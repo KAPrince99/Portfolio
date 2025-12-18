@@ -4,6 +4,7 @@ import Shuffle from "@/components/Shuffle";
 import Navbar from "@/components/ui/Navbar";
 import Dock from "@/components/ui/Dock";
 import { Press_Start_2P } from "next/font/google";
+import { MoveRight } from "lucide-react";
 
 const pixel = Press_Start_2P({
   weight: "400",
@@ -61,6 +62,50 @@ export default function Hero() {
           />
         </section>
       </div>
+
+      <section className="w-full flex flex-col py-5 md:py-0 md:flex-row  justify-center md:justify-between items-start  xl:max-w-[1800px] mx-auto gap-8 px-5 md:px-8 lg:px-10">
+        {/* Text Content */}
+        <div className="animate-fade-up animation-delay-1000 group">
+          <div className="flex items-center gap-3 mb-0 md:mb-1">
+            <h1 className="text-base md:text-lg lg:text-2xl  font-light tracking-tight text-black/80">
+              AVAILABLE FOR COLLABORATION
+            </h1>
+            <MoveRight className=" w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6   text-black group-hover:text-orange-500 rotate-30 group-hover:rotate-0 transition-transform duration-300" />
+          </div>
+
+          <div className="relative overflow-hidden ml-12">
+            <a
+              href="mailto:princeamanorkabutey@gmail.com"
+              className="block text-base md:text-lg lg:text-2xl font-bold tracking-tighter hover:text-orange-600 underline hover:no-underline transition-all"
+            >
+              princeamanorkabutey@gmail.com
+            </a>
+            {/* Fixed Underline Logic: added 'group' to parent and fixed translate */}
+            <span className="absolute bottom-0 left-0 w-full h-[2px] md:h-[3px] bg-orange-500 transform translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
+          </div>
+        </div>
+
+        {/* Brutalist Orange Block */}
+        <div className="animate-fade-up animation-delay-1000 group">
+          <div className="flex items-center gap-3 mb-0 md:mb-1">
+            <h1 className="text-base md:text-lg lg:text-2xl  font-light tracking-tight text-black/80">
+              RECENT PROJECT
+            </h1>
+            <MoveRight className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-black group-hover:text-orange-500 rotate-30 group-hover:rotate-0 transition-transform duration-300" />
+          </div>
+
+          <div className="relative overflow-hidden ml-20">
+            <a
+              href="https://stanect.com"
+              className="block text-lg md:text-lg lg:text-4xl font-bold tracking-tighter hover:text-orange-600  underline hover:no-underline transition-all"
+            >
+              STANECT
+            </a>
+            {/* Fixed Underline Logic: added 'group' to parent and fixed translate */}
+            <span className="absolute bottom-0 left-0 w-full h-[2px] md:h-[3px] bg-orange-500 transform translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
+          </div>
+        </div>
+      </section>
 
       <section className="mt-auto mb-10">
         <h2

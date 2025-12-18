@@ -5,7 +5,7 @@ import Role from "@/components/ui/Role";
 
 export default function page() {
   return (
-    <main className="min-h-screen w-full mx-auto max-w-[1920px] relative">
+    <main className="min-h-screen w-full py-20 mx-auto max-w-[1920px] relative">
       <Hero />
       <Role />
       <About />
