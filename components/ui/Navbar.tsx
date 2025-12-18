@@ -45,12 +45,14 @@ export default function Navbar() {
       <section className="w-full max-w-[1440px] flex justify-between items-center  animate-fade-down animation-delay-1400 group">
         {/* Logo Section */}
         <div
-          className={`${pixel.className} md:text-xl lg:text-3xl hidden sm:block opacity-50`}
+          className={`${pixel.className} group flex items-center  sm:flex opacity-80 hover:opacity-100 transition-opacity duration-300`}
         >
-          <span className="text-black md:text-2xl lg:text-4xl bg-orange-600 px-2 py-2">
+          {/* The Badge Container */}
+          <span className="relative inline-block text-white text-xl md:text-2xl lg:text-4xl bg-black px-2 py-1 md:px-4 md:py-2 transition-transform duration-300 ease-out group-hover:rotate-6 group-hover:scale-110">
             FRONTEND
-          </span>{" "}
-          CREATIVE
+            {/* The Orange Glitch Sticker */}
+            <span className="absolute bg-orange-500 w-6 h-3 md:w-8 md:h-5 -right-3 -top-2 -rotate-12 group-hover:rotate-12 group-hover:bg-white transition-all duration-300 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]" />
+          </span>
         </div>
 
         {/* Links Section */}

@@ -111,7 +111,7 @@ export default function Hero() {
         <h2
           className={`text-center ${pixel.className} tracking-tighter text-[10px] md:text-base 2xl:text-xl animate-fade-up animation-delay-1200`}
         >
-          Accra, Ghana .
+          Accra, Ghana.
         </h2>
       </section>
 
