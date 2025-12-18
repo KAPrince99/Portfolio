@@ -116,11 +116,31 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-html {
-  scroll-behavior: smooth;
+html.lenis,
+html.lenis body {
+  height: auto;
 }
 
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Ensure horizontal scroll is hidden globally since we're using overflow-x-hidden in Hero */
 body {
+  overflow-x: hidden;
+  width: 100%;
   background-color: var(--personal-one);
 }
 

@@ -3,6 +3,7 @@
 import Box from "@/components/ui/Box";
 import { motion } from "framer-motion";
 import { Press_Start_2P } from "next/font/google";
+import { useLenis } from "@studio-freight/react-lenis";
 
 const pixel = Press_Start_2P({
   weight: "400",
@@ -36,28 +37,18 @@ const boxItems = [
   },
 ];
 
-const scrollToSection = (id: string) => {
-  const element = document.getElementById(id);
-  if (!element) return;
-  const targetY = element.getBoundingClientRect().top + window.scrollY;
-  const startY = window.scrollY;
-  const distance = targetY - startY;
-  const duration = 300;
-  let start: number | null = null;
-
-  const step = (timestamp: number) => {
-    if (!start) start = timestamp;
-    const progress = Math.min((timestamp - start) / duration, 1);
-    window.scrollTo(0, startY + distance * easeInOutCubic(progress));
-    if (progress < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-};
-
-const easeInOutCubic = (t: number) =>
-  t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-
 export default function Dock() {
+  const lenis = useLenis();
+
+  const scrollToSection = (id: string) => {
+    // lenis.scrollTo handles the selection, offset, and easing automatically
+    lenis?.scrollTo(`#${id}`, {
+      offset: 0, // Adjust this if you have a fixed header (e.g., -80)
+      duration: 1.5, // Matches your smooth scroll feel
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // High-end "out-expo" easing
+      immediate: false, // Set to true if you want it to jump without animation
+    });
+  };
   return (
     <section className="fixed bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-50 animate-fade-up animation-delay-1000 w-[95%] max-w-[600px]">
       <motion.div
