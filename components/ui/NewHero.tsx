@@ -2,12 +2,8 @@ import Dock from "@/components/ui/Dock";
 
 export default function NewHero() {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col justify-center items-center md:justify-start ">
       <div className="flex justify-center items-center px-5">
-        {/* 
-      Width: Clamps between 350px and 1000px 
-      Height: Clamps between 240px and 500px
-    */}
         <section
           className="
       bg-white 
@@ -18,10 +14,6 @@ export default function NewHero() {
       relative overflow-hidden border border-black/10
     "
         >
-          {/* 
-        Text: Clamps between 24px and 60px (approx 6xl)
-        Leading: Uses clamp for line-height to keep it tight as it grows
-      */}
           <div
             className="
         text-[clamp(1.5rem,5.5vw,3.75rem)] 
@@ -42,10 +34,6 @@ export default function NewHero() {
             <h1 className="ml-[clamp(1rem,4vw,2.5rem)]">Infusing AI magic</h1>
           </div>
 
-          {/* 
-        Circle: Clamps between 200px and 500px 
-        Positioning: Moves slightly to maintain the "cut-off" look
-      */}
           <div
             className="
         absolute 
