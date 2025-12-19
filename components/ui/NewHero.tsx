@@ -2,7 +2,7 @@ import Dock from "@/components/ui/Dock";
 
 export default function NewHero() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center md:justify-start ">
+    <main className="min-h-screen flex flex-col justify-center items-center lg:justify-start  ">
       <div className="flex justify-center items-center px-5">
         <section
           className="
