@@ -101,7 +101,7 @@ export default function Hero() {
             >
               STANECT
             </a>
-            {/* Fixed Underline Logic: added 'group' to parent and fixed translate */}
+
             <span className="absolute bottom-0 left-0 w-full h-[2px] md:h-[3px] bg-orange-500 transform translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
           </div>
         </div>
