@@ -7,7 +7,7 @@ export default function NewHero() {
         <section
           className="
       bg-white 
-      w-[clamp(350px,100vw,1000px)] 
+      w-[clamp(350px,98vw,1000px)] 
       md:w-[clamp(350px,80vw,1000px)] 
       h-[clamp(240px,50vw,500px)] 
       p-[clamp(0.75rem,3vw,2.5rem)] 

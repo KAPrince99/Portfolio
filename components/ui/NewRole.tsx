@@ -1,5 +1,16 @@
 "use client";
 
+const stacks = [
+  { id: "1", name: "Nextjs" },
+  { id: "2", name: "React" },
+  { id: "3", name: "GSAP" },
+  { id: "4", name: "Motion" },
+  { id: "5", name: "Tailwind" },
+  { id: "6", name: "Supabase" },
+  { id: "7", name: "OpenAi" },
+  { id: "8", name: "Clerk" },
+];
+
 export default function NewRole() {
   return (
     <main
@@ -7,15 +18,31 @@ export default function NewRole() {
    space-y-15 md:space-y-25 lg:space-y-40"
     >
       <section
-        className="md:-ml-2 lg:ml-4 xl:ml-2 bg-white flex 
+        className="flex flex-col space-y-5 lg:space-y-10 p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-white
+        text-[clamp(1.5rem,5.5vw,3.75rem)] 
            w-[clamp(350px,90vw,1000px)] 
           md:w-[clamp(350px,60vw,1000px)]
           h-[clamp(240px,50vw,500px)]  "
-      ></section>
+      >
+        <div className="flex justify-between items-center">
+          <h1>Nextjs</h1>
+          <h1>React</h1>
+          <h1>Supabase</h1>
+        </div>
+        <div className="flex justify-between items-center">
+          <h1>Gsap</h1>
+          <h1>Tailwind</h1>
+          <h1>Motion</h1>
+        </div>
+        <div className="flex justify-between items-center">
+          <h1>Clerk</h1>
+          <h1>Openai</h1>
+        </div>
+      </section>
 
       <section
         className="flex flex-col md:ml-60 lg:ml-80 xl:ml-125 px-5 md:px-10 lg:px-20 py-5 md:py-10  bg-yellow-300 space-y-10 md:space-y-15 lg:space-y-20  font-satoshi font-medium  tracking-wide
-          text-[clamp(1.5rem,5.5vw,3.75rem)] 
+          text-[clamp(1.5rem,5.5vw,3.75rem)]  
           w-[clamp(350px,90vw,1000px)] 
           md:w-[clamp(350px,60vw,1000px)]
           h-[clamp(240px,50vw,500px)]"

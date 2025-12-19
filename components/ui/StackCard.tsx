@@ -8,7 +8,7 @@ export default function StackCard({ name }: { name: string }) {
 
   return (
     <motion.section
-      className="relative bg-black/70 w-full h-16 md:h-20 items-center grid place-content-center cursor-pointer"
+      className="relative bg-yellow-300 w-full h-16 md:h-25 items-center grid place-content-center cursor-pointer"
       initial="initial"
       whileHover="hover"
       variants={{
@@ -17,10 +17,15 @@ export default function StackCard({ name }: { name: string }) {
       }}
     >
       <motion.div
-        className="absolute bg-orange-500 w-6 h-3 md:w-10 md:h-4 -right-2 md:-right-4 -top-1 md:-top-2"
+        className="absolute bg-black w-6 h-3 md:w-10 md:h-4 -right-2 md:-right-4 -top-1 md:-top-2"
         variants={tipVariants}
       />
-      <h2 className="text-white text-xs md:text-sm">{name}</h2>
+      <h2
+        className="text-black  font-satoshi font-medium  tracking-wide
+          text-[clamp(1.5rem,5.5vw,2rem)]"
+      >
+        {name}
+      </h2>
     </motion.section>
   );
 }
