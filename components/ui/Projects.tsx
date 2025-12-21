@@ -25,6 +25,14 @@ export default function Projects() {
         </span>{" "}
         <h1>PROJECTS</h1>
       </div>
+      <div className="my-5 md:hidden">
+        <a
+          href="https://stanect.vercel.app/"
+          className={`block text-lgfont-bold tracking-tighter text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all ${pixel.className}`}
+        >
+          Stanect
+        </a>
+      </div>
       <section className="flex items-center md:gap-10 lg:gap-20">
         <motion.section
           variants={sectionVariants}
@@ -97,7 +105,7 @@ export default function Projects() {
           <InfiniteVerticalDots numDots={7} height="20" />
         </div> */}
         </motion.section>
-        <div className="relative flex items-center md:gap-2 lg:gap-10 overflow-hidden ml-5 group">
+        <div className="relative hidden md:flex items-center md:gap-2 lg:gap-10 overflow-hidden ml-5 group">
           <MoveLeft className="md:w-10 md:h-8 lg:w-15 lg:h-15 text-orange-500 lg:text-black group-hover:text-orange-500 lg:rotate-30 group-hover:rotate-0 transition-transform duration-300" />
           <a
             href="https://stanect.vercel.app/"
@@ -109,8 +117,16 @@ export default function Projects() {
           <span className="absolute bottom-0 left-0 w-full h-[2px] md:h-[3px] bg-orange-500 transform translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
         </div>
       </section>
+      <div className="my-5 md:hidden">
+        <a
+          href="https://tiny45.vercel.app/"
+          className={`block text-lgfont-bold tracking-tighter text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all ${pixel.className}`}
+        >
+          Tiny45
+        </a>
+      </div>
       <section className="flex items-center">
-        <div className="relative flex items-center  md:gap-2 lg:gap-10  overflow-hidden ml-5 group">
+        <div className="relative hidden md:flex items-center  md:gap-2 lg:gap-10  overflow-hidden ml-5 group">
           <a
             href="https://tiny45.vercel.app/"
             className={`block text-lg md:text-lg lg:text-4xl font-bold tracking-tighter text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all ${pixel.className}`}
