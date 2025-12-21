@@ -1,6 +1,6 @@
 "use client";
 import Dock from "@/components/ui/Dock";
-import { Variants, motion } from "framer-motion";
+import { Variants, hover, motion } from "framer-motion";
 
 export default function NewHero() {
   const fadeUpVariants: Variants = {
@@ -38,22 +38,62 @@ export default function NewHero() {
       },
     }),
   };
-  const sectionVariants = {
-    initial: { rotate: 0 },
+  const sectionVariants: Variants = {
+    hidden: { rotate: 0, x: -80, opacity: 0 },
     hover: { rotate: 5 },
+    visible: (customDelay: number) => ({
+      whileHover: { rotate: 5 },
+      x: 0,
+      opacity: 1,
+      hover: { rotate: 5 },
+      transition: {
+        type: "spring",
+        stiffness: 400,
+        damping: 10,
+        duration: 2,
+        delay: customDelay,
+      },
+    }),
   };
 
-  const tapeVariants = {
-    hover: { rotate: -20 },
+  const tapeVariants: Variants = {
+    hidden: {
+      opacity: 0,
+      x: -80,
+      scale: 0.5,
+    },
+
+    hover: {
+      rotate: -20,
+      scale: 1.1,
+      transition: { type: "spring", stiffness: 400, damping: 10 },
+    },
+
+    visible: () => ({
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      rotate: 40,
+
+      transition: {
+        type: "spring",
+        stiffness: 400,
+        damping: 15,
+        delay: 1.2,
+      },
+    }),
   };
   return (
     <main className="min-h-screen flex flex-col justify-center items-center lg:justify-start ">
       <div className="flex justify-center items-center px-5">
         <motion.section
-          initial="initial"
-          whileHover="hover" // This triggers "hover" in all children too
           variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          whileHover="hover"
+          custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          viewport={{ once: true }}
           className="
           
       bg-white 
@@ -79,6 +119,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={0.2}
+              viewport={{ once: true }}
               className=""
             >
               Prince Amanor Kabutey
@@ -88,6 +129,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={0.6}
+              viewport={{ once: true }}
               className="ml-[clamp(1rem,4vw,2.5rem)]"
             >
               is a Ghanaian
@@ -97,6 +139,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={1.0}
+              viewport={{ once: true }}
             >
               frontend creative
             </motion.h1>
@@ -105,6 +148,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={1.2}
+              viewport={{ once: true }}
               className="ml-[clamp(1rem,4vw,2.5rem)]"
             >
               mastering react & nextjs
@@ -113,6 +157,7 @@ export default function NewHero() {
               variants={fadeUpVariants}
               initial="hidden"
               whileInView="visible"
+              viewport={{ once: true }}
               custom={1.4}
             >
               Backend with supabase
@@ -122,6 +167,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={1.6}
+              viewport={{ once: true }}
               className="ml-[clamp(1rem,4vw,2.5rem)]"
             >
               Infusing AI magic
@@ -133,6 +179,7 @@ export default function NewHero() {
             initial="hidden"
             whileInView="visible"
             custom={1.8}
+            viewport={{ once: true }}
             className="
         absolute 
         right-0 top-0
@@ -145,8 +192,10 @@ export default function NewHero() {
 
           <motion.div
             variants={tapeVariants}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 rotate-40 md:rotate-40 lg:rotate-42 xl:rotate-40 shadow-2xl "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 shadow-2xl "
           />
         </motion.section>
       </div>
