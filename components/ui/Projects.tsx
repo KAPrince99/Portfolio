@@ -129,7 +129,7 @@ export default function Projects() {
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           viewport={{ once: true }}
-          className="relative flex flex-col md:ml-40 px-5 py-5 md:py-10 bg-white
+          className="relative flex flex-col md:ml-40 lg:ml-30 px-5 py-5 md:py-10 bg-white
         tracking-tight lg:tracking-tight leading-[2.1]
         md:leading-[1.1] font-satoshi font-meduim text-gray-800
         text-[clamp(1rem,4.5vw,3rem)]  
