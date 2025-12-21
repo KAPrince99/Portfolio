@@ -38,7 +38,6 @@ export default function Projects() {
             "Clerk",
             "paystack",
             "framer-motion",
-            "Tailwind",
           ].map((stack, i) => (
             <div
               key={i}
@@ -104,29 +103,24 @@ export default function Projects() {
           replicate fivefourfive website.
         </p>
         <div className="hidden xl:flex items-center justify-between my-8">
-          {[
-            "Nextjs",
-            "supabase",
-            "Clerk",
-            "stripe",
-            "framer-motion",
-            "Tailwind",
-          ].map((stack, i) => (
-            <div
-              key={i}
-              className="flex items-center gap-2 border-2 border-black/30 px-3 py-1 rounded-sm text-black/60 bg-white/10"
-            >
-              {/* Use a span with leading-none to remove extra space around the asterisk */}
-              <span className="text-[24px] leading-none flex items-center justify-center translate-y-[2px]">
-                *
-              </span>
+          {["Nextjs", "supabase", "Clerk", "stripe", "framer-motion"].map(
+            (stack, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-2 border-2 border-black/30 px-3 py-1 rounded-sm text-black/60 bg-white/10"
+              >
+                {/* Use a span with leading-none to remove extra space around the asterisk */}
+                <span className="text-[24px] leading-none flex items-center justify-center translate-y-[2px]">
+                  *
+                </span>
 
-              {/* leading-none and flex items-center ensure the text is perfectly centered */}
-              <p className="text-[24px] leading-none flex items-center">
-                {stack}
-              </p>
-            </div>
-          ))}
+                {/* leading-none and flex items-center ensure the text is perfectly centered */}
+                <p className="text-[24px] leading-none flex items-center">
+                  {stack}
+                </p>
+              </div>
+            )
+          )}
         </div>
         <div className="flex items-center justify-start gap-10 py-5 text-base lg:text-[24px] tracking-wide ">
           <div className=" flex items-center justify-around bg-personal-one px-2 py-1 ">
