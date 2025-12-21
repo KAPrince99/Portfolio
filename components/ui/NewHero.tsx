@@ -2,16 +2,17 @@ import Dock from "@/components/ui/Dock";
 
 export default function NewHero() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center lg:justify-start  ">
+    <main className="min-h-screen flex flex-col justify-center items-center lg:justify-start ">
       <div className="flex justify-center items-center px-5">
         <section
           className="
+          
       bg-white 
       w-[clamp(350px,98vw,1000px)] 
       md:w-[clamp(350px,80vw,1000px)] 
       h-[clamp(240px,50vw,500px)] 
       p-[clamp(0.75rem,3vw,2.5rem)] 
-      relative overflow-hidden border border-black/10
+      relative  border border-black/10 shadow-xl shadow-personal-one
     "
         >
           <div
@@ -44,12 +45,18 @@ export default function NewHero() {
         rounded-full bg-yellow-300/70 z-0
       "
           />
+
+          <div className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 rotate-40 md:rotate-40 lg:rotate-42 xl:rotate-40 shadow-2xl " />
         </section>
       </div>
 
       <div className="pb-20 md:pb-10 w-full flex justify-center items-center">
         <Dock />
       </div>
+
+      {/* <div className="absolute  top-4/6 bottom-0">
+        <InfiniteVerticalDots numDots={30} height="100" />
+      </div> */}
     </main>
   );
 }
