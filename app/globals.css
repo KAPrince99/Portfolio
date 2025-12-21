@@ -119,18 +119,11 @@
 }
 
 @layer base {
-  /* This makes Satoshi the default font for the whole site */
-  /* body {
-    font-family: var(--font-satoshi), sans-serif;
-  } */
-
-  /* This makes it easy to use the Pixel font whenever you want */
   .font-pixel {
     font-family: var(--font-pixel), cursive;
   }
 }
 
-/* Specific helper class for Satoshi if you need to call it explicitly */
 .font-satoshi {
   font-family: var(--font-satoshi), sans-serif;
   font-optical-sizing: auto; /* This makes it look sharper at small sizes */

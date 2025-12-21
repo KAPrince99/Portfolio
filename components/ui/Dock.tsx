@@ -50,7 +50,7 @@ export default function Dock() {
     });
   };
   return (
-    <section className="fixed bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-50 animate-fade-up animation-delay-1000 w-[95%] max-w-[600px]">
+    <section className="fixed bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-50 animate-fade-up animation-delay-1200 w-[95%] max-w-[600px]">
       <motion.div
         initial={{ scale: 1 }}
         whileHover={{ scale: 1.02 }} // Reduced scale on hover for better stability
