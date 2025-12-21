@@ -26,10 +26,35 @@ export default function Projects() {
           h-[clamp(240px,50vw,500px)] shadow-2xl shadow-personal-one"
       >
         <p>
-          AI-powered voice companion designed to help users improve
-          communication skills by practicing real-time conversations with AI
-          companions.
+          Full-stack AI-powered voice companion designed to help users improve
+          communication skills through interactive, real-time conversations with
+          AI companions.
         </p>
+        <div className="hidden xl:flex items-center justify-between my-8">
+          {[
+            "Nextjs",
+            "Vapi AI",
+            "Supabase",
+            "Clerk",
+            "framer-motion",
+            "Tailwind",
+          ].map((stack, i) => (
+            <div
+              key={i}
+              className="flex items-center gap-2 border-2 border-black/30 px-3 py-1 rounded-sm text-black/60 bg-white/10"
+            >
+              {/* Use a span with leading-none to remove extra space around the asterisk */}
+              <span className="text-[24px] leading-none flex items-center justify-center translate-y-[2px]">
+                *
+              </span>
+
+              {/* leading-none and flex items-center ensure the text is perfectly centered */}
+              <p className="text-[24px] leading-none flex items-center">
+                {stack}
+              </p>
+            </div>
+          ))}
+        </div>
         <div className="flex items-center justify-start gap-10 py-5 text-base lg:text-[24px] tracking-wide ">
           <div className=" flex items-center justify-around bg-personal-one px-2 py-1 ">
             <p>Production</p>
@@ -64,7 +89,7 @@ export default function Projects() {
         custom={0.1}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         viewport={{ once: true }}
-        className="relative flex  md:ml-60 lg:ml-80 xl:ml-125 px-5 md:px-10 lg:px-20 py-5 md:py-10  bg-yellow-300  font-satoshi font-medium  tracking-wide
+        className="relative flex  md:ml-60 lg:ml-80 xl:ml-125 px-5 md:px-10 lg:px-20 py-5 md:py-10  bg-white font-satoshi font-medium  tracking-wide
           text-[clamp(1.5rem,5.5vw,3.75rem)]  
           w-[clamp(350px,90vw,1000px)] 
           md:w-[clamp(350px,60vw,1000px)]
