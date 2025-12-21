@@ -34,8 +34,9 @@ export default function Projects() {
           {[
             "Nextjs",
             "Vapi AI",
-            "Supabase",
+            "supabase",
             "Clerk",
+            "paystack",
             "framer-motion",
             "Tailwind",
           ].map((stack, i) => (
@@ -89,12 +90,59 @@ export default function Projects() {
         custom={0.1}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         viewport={{ once: true }}
-        className="relative flex  md:ml-60 lg:ml-80 xl:ml-125 px-5 md:px-10 lg:px-20 py-5 md:py-10  bg-white font-satoshi font-medium  tracking-wide
-          text-[clamp(1.5rem,5.5vw,3.75rem)]  
-          w-[clamp(350px,90vw,1000px)] 
+        className="relative flex flex-col md:ml-60 lg:ml-80 xl:ml-125 px-5 md:px-10 lg:px-20 py-5 md:py-10 bg-white
+        tracking-tight lg:tracking-tight leading-[2.1]
+        md:leading-[1.1] font-satoshi font-meduim text-gray-800
+        text-[clamp(1rem,4.5vw,3rem)]  
+           w-[clamp(350px,90vw,1000px)] 
           md:w-[clamp(350px,60vw,1000px)]
-          h-[clamp(240px,50vw,500px)]"
+          h-[clamp(240px,50vw,500px)] shadow-2xl shadow-personal-one"
       >
+        <p>
+          Full-stack e-commerce clothing application showcasing frontend UI,
+          backend data handling, and real-world shopping flows built to
+          replicate fivefourfive website.
+        </p>
+        <div className="hidden xl:flex items-center justify-between my-8">
+          {[
+            "Nextjs",
+            "supabase",
+            "Clerk",
+            "stripe",
+            "framer-motion",
+            "Tailwind",
+          ].map((stack, i) => (
+            <div
+              key={i}
+              className="flex items-center gap-2 border-2 border-black/30 px-3 py-1 rounded-sm text-black/60 bg-white/10"
+            >
+              {/* Use a span with leading-none to remove extra space around the asterisk */}
+              <span className="text-[24px] leading-none flex items-center justify-center translate-y-[2px]">
+                *
+              </span>
+
+              {/* leading-none and flex items-center ensure the text is perfectly centered */}
+              <p className="text-[24px] leading-none flex items-center">
+                {stack}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center justify-start gap-10 py-5 text-base lg:text-[24px] tracking-wide ">
+          <div className=" flex items-center justify-around bg-personal-one px-2 py-1 ">
+            <p>Production</p>
+            <span>
+              <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1" />
+            </span>
+          </div>
+          <div className=" flex items-center justify-around bg-personal-one px-2 py-1 ">
+            <p>Github</p>
+            <span>
+              <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1" />
+            </span>
+          </div>
+        </div>
+
         <motion.div
           variants={tapeVariants}
           initial="hidden"
