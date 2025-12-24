@@ -11,17 +11,15 @@ export default function Projects() {
     "
     >
       <div
-        className={`my-15 flex items-center justify-center w-full font-satoshi  text-[24px] md:text-[30px] lg:text-[48px] font-bold tracking-wider text-black/60  space-x-2`}
+        className={`my-15 flex items-center justify-center w-full font-satoshi  text-[24px] md:text-[30px] lg:text-[48px] font-bold tracking-wider text-black/60  space-x-2 line-through decoration-orange-500 decoration-2 md:decoration-4 lg:decoration-6`}
       >
-        <span className="text-[35px] leading-none flex items-center justify-center translate-y-[2px]">
-          *
-        </span>{" "}
+        <span className="text-[35px] leading-none flex items-center justify-center translate-y-[2px]"></span>{" "}
         <h1>PROJECTS</h1>
       </div>
       <div className="my-5 md:hidden">
         <a
           href="https://stanect.vercel.app/"
-          className={`block text-lg font-bold tracking- wide text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all font-satoshi`}
+          className={`block text-lg font-bold tracking-wide text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all font-satoshi`}
         >
           Stanect
         </a>
