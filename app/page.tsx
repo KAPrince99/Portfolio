@@ -1,6 +1,7 @@
 import NewHero from "@/components/ui/NewHero";
 import Projects from "@/components/ui/Projects";
 import Essentials from "@/components/ui/Essentials";
+import NewAbout from "@/components/ui/NewAbout";
 
 export default function page() {
   return (
@@ -8,6 +9,7 @@ export default function page() {
       <NewHero />
       <Projects />
       <Essentials />
+      <NewAbout />
     </main>
   );
 }
