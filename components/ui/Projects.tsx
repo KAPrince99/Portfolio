@@ -1,15 +1,8 @@
 "use client";
 import { MoveLeft, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { Press_Start_2P } from "next/font/google";
-import { sectionVariants, tapeVariants } from "@/lib/variants";
 
-const pixel = Press_Start_2P({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-pixel",
-  display: "swap",
-});
+import { sectionVariants, tapeVariants } from "@/lib/variants";
 
 export default function Projects() {
   return (
@@ -18,7 +11,7 @@ export default function Projects() {
     "
     >
       <div
-        className={`my-15 flex items-center justify-center w-full ${pixel.className} text-[24px] md:text-[30px] lg:text-[48px] font-semibold tracking-tight text-black/60  space-x-2`}
+        className={`my-15 flex items-center justify-center w-full font-satoshi  text-[24px] md:text-[30px] lg:text-[48px] font-bold tracking-wider text-black/60  space-x-2`}
       >
         <span className="text-[35px] leading-none flex items-center justify-center translate-y-[2px]">
           *
@@ -28,7 +21,7 @@ export default function Projects() {
       <div className="my-5 md:hidden">
         <a
           href="https://stanect.vercel.app/"
-          className={`block text-lgfont-bold tracking-tighter text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all ${pixel.className}`}
+          className={`block text-lg font-bold tracking- wide text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all font-satoshi`}
         >
           Stanect
         </a>
@@ -42,7 +35,7 @@ export default function Projects() {
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           viewport={{ once: true }}
-          className="relative flex flex-col  p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-white
+          className="relative flex flex-col  p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-personal-two
         tracking-tight lg:tracking-tight leading-[2.1] mb-15 md:mb-20 lg:mb-30
         md:leading-[1.1] font-satoshi font-meduim text-gray-800
         text-[clamp(1rem,4.5vw,3rem)]  
@@ -109,7 +102,7 @@ export default function Projects() {
           <MoveLeft className="md:w-10 md:h-8 lg:w-15 lg:h-15 text-orange-500 lg:text-black group-hover:text-orange-500 lg:rotate-30 group-hover:rotate-0 transition-transform duration-300" />
           <a
             href="https://stanect.vercel.app/"
-            className={`block text-lg md:text-lg lg:text-4xl font-bold tracking-tighter text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all ${pixel.className}`}
+            className={`block text-5xl font-bold tracking-wide text-orange-500 lg:text-black group-hover:text-orange-600  underline group-hover:no-underline transition-all font-satoshi `}
           >
             Stanect
           </a>
@@ -120,7 +113,7 @@ export default function Projects() {
       <div className="my-5 md:hidden">
         <a
           href="https://tiny45.vercel.app/"
-          className={`block text-lgfont-bold tracking-tighter text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all ${pixel.className}`}
+          className={`block text-lgfont-bold tracking-wide text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all font-satoshi`}
         >
           Tiny45
         </a>
@@ -129,7 +122,7 @@ export default function Projects() {
         <div className="relative hidden md:flex items-center  md:gap-2 lg:gap-10  overflow-hidden ml-5 group">
           <a
             href="https://tiny45.vercel.app/"
-            className={`block text-lg md:text-lg lg:text-4xl font-bold tracking-tighter text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all ${pixel.className}`}
+            className={`block text-lg md:text-lg lg:text-5xl font-bold tracking-wider text-orange-500 lg:text-black group-hover:text-orange-600  underline group-hover:no-underline transition-all font-satoshi`}
           >
             Tiny45
           </a>
@@ -145,7 +138,7 @@ export default function Projects() {
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           viewport={{ once: true }}
-          className="relative flex flex-col md:ml-40 lg:ml-50 xl:ml-30 px-5 py-5 md:py-10 bg-white
+          className="relative flex flex-col md:ml-40 lg:ml-50 xl:ml-30 px-5 py-5 md:py-10 bg-personal-two
         tracking-tight lg:tracking-tight leading-[2.1]
         md:leading-[1.1] font-satoshi font-meduim text-gray-800
         text-[clamp(1rem,4.5vw,3rem)]  
