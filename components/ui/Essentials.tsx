@@ -8,12 +8,13 @@ import Link from "next/link";
 const stacks = [
   { id: "1", name: "Nextjs" },
   { id: "2", name: "React" },
-  { id: "3", name: "GSAP" },
-  { id: "4", name: "Motion" },
-  { id: "5", name: "Tailwind" },
-  { id: "6", name: "Supabase" },
-  { id: "7", name: "OpenAi" },
-  { id: "8", name: "Clerk" },
+  { id: "3", name: "Python" },
+  { id: "4", name: "GSAP" },
+  { id: "5", name: "Motion" },
+  { id: "6", name: "Tailwind" },
+  { id: "7", name: "Supabase" },
+  { id: "8", name: "OpenAi" },
+  { id: "9", name: "Clerk" },
 ];
 
 export default function Essentials() {
@@ -49,16 +50,17 @@ export default function Essentials() {
           <div className="flex justify-between items-center">
             <h1>Nextjs</h1>
             <h1>React</h1>
-            <h1>Supabase</h1>
+            <h1>Typescript</h1>
           </div>
           <div className="flex justify-between items-center">
-            <h1>Gsap</h1>
+            <h1>Supabase</h1>
             <h1>Tailwind</h1>
             <h1>Motion</h1>
           </div>
           <div className="flex justify-between items-center">
+            <h1>Gsap</h1>
             <h1>Clerk</h1>
-            <h1>Openai</h1>
+            <h1>OpenAI</h1>
           </div>
           <div className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 rotate-40 md:rotate-40 lg:rotate-42 xl:rotate-40 shadow-2xl shadow-personal-one " />
         </motion.section>

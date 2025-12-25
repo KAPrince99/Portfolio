@@ -64,7 +64,6 @@ export default function NewAbout() {
             variants={sectionVariants}
             initial="hidden"
             whileInView="visible"
-            whileHover="hover"
             custom={0.1}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className={`flex flex-col w-full p-4 md:p-5 lg:p-10 bg-personal-one
