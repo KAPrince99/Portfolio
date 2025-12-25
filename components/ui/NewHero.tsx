@@ -22,7 +22,7 @@ export default function NewHero() {
           whileHover="hover"
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          viewport={{ once: true, amount: "all" }}
+          viewport={{ once: true }}
           className="
           
       bg-white 
@@ -48,7 +48,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={0.2}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true }}
               className=""
             >
               Prince Amanor Kabutey
@@ -58,7 +58,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={0.6}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true }}
               className="ml-[clamp(1rem,4vw,2.5rem)]"
             >
               is a Ghanaian
@@ -68,7 +68,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={1.0}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true }}
             >
               frontend creative
             </motion.h1>
@@ -77,7 +77,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={1.2}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true }}
               className="ml-[clamp(1rem,4vw,2.5rem)]"
             >
               mastering react & nextjs
@@ -86,7 +86,7 @@ export default function NewHero() {
               variants={fadeUpVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true }}
               custom={1.4}
             >
               Backend with supabase
@@ -96,7 +96,7 @@ export default function NewHero() {
               initial="hidden"
               whileInView="visible"
               custom={1.6}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true }}
               className="ml-[clamp(1rem,4vw,2.5rem)]"
             >
               Infusing AI magic
@@ -108,7 +108,7 @@ export default function NewHero() {
             initial="hidden"
             whileInView="visible"
             custom={1.8}
-            viewport={{ once: true, amount: "all" }}
+            viewport={{ once: true }}
             className="
         absolute 
         right-0 top-0
@@ -123,7 +123,7 @@ export default function NewHero() {
             variants={tapeVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: "all" }}
+            viewport={{ once: true }}
             className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 shadow-2xl "
           />
         </motion.section>

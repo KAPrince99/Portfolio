@@ -40,7 +40,7 @@ export default function Essentials() {
           whileHover="hover"
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          viewport={{ once: true, amount: "all" }}
+          viewport={{ once: true }}
           className="relative flex flex-col space-y-15 lg:space-y-25 p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-white
        text-2xl md:text-3xl lg:text-5xl
            w-[clamp(350px,90vw,1000px)] 
@@ -95,7 +95,7 @@ export default function Essentials() {
           whileHover="hover"
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          viewport={{ once: true, amount: "all" }}
+          viewport={{ once: true }}
           className="relative flex flex-col md:ml-60 lg:ml-60 xl:ml-40 px-5 md:px-5 lg:px-10 py-5 md:py-10  bg-yellow-300 space-y-10 md:space-y-15 lg:space-y-20  font-satoshi font-medium  tracking-wide
           text-[clamp(1.5rem,5.5vw,3.75rem)]  
           w-[clamp(350px,90vw,1000px)] 
