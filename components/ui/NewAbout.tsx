@@ -46,6 +46,7 @@ const passages = [
 export default function NewAbout() {
   return (
     <main
+      id="about"
       className="min-h-screen w-full flex flex-col justify-center items-center  relative   md:px-10 py-10 md:py-30 lg:py-50 
     "
     >

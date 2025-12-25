@@ -10,7 +10,10 @@ import { motion } from "framer-motion";
 
 export default function NewHero() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center lg:justify-start ">
+    <main
+      id="hero"
+      className="min-h-screen flex flex-col justify-center items-center lg:justify-start "
+    >
       <div className="flex justify-center items-center px-5">
         <motion.section
           variants={sectionVariants}

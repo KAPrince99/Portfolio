@@ -20,8 +20,8 @@ const boxItems = [
     main: true,
   },
   {
-    id: "role",
-    name: "Role",
+    id: "socials",
+    name: "Socials",
     main: true,
   },
   {
