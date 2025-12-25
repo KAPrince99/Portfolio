@@ -7,8 +7,42 @@ import {
   tapeVariants,
 } from "@/lib/variants";
 import { motion } from "framer-motion";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 export default function NewHero() {
+  const circleRef = useRef(null);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
+
+      tl.fromTo(
+        circleRef.current,
+        {
+          opacity: 1,
+          x: 0,
+          scale: 1,
+        },
+        {
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          duration: 1.5,
+          delay: 1.8,
+          ease: "back.out(1.2)",
+        }
+      ).to(circleRef.current, {
+        x: -250,
+        duration: 5,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    },
+    { scope: circleRef }
+  );
   return (
     <main
       id="hero"
@@ -104,6 +138,7 @@ export default function NewHero() {
           </div>
 
           <motion.div
+            ref={circleRef}
             variants={fadeRightVariants}
             initial="hidden"
             whileInView="visible"
@@ -132,10 +167,6 @@ export default function NewHero() {
       <div className="pb-20 md:pb-10 w-full flex justify-center items-center">
         <Dock />
       </div>
-
-      {/* <div className="absolute  top-4/6 bottom-0">
-        <InfiniteVerticalDots numDots={30} height="100" />
-      </div> */}
     </main>
   );
 }
