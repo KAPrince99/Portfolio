@@ -75,16 +75,30 @@ export default function Projects() {
             ))}
           </div>
           <div className="flex items-center justify-start gap-10 py-5 text-base lg:text-[24px] tracking-wide ">
-            <div className=" flex items-center justify-around bg-personal-one px-2 py-1 ">
-              <p>Production</p>
+            <div className=" flex items-center justify-around bg-personal-one px-2 py-1 group">
+              <Link
+                href="https://stanect.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group-hover:text-orange-500"
+              >
+                Production
+              </Link>
               <span>
-                <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1" />
+                <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1 group-hover:text-orange-500 group-hover:rotate-0 transition-transform duration-300" />
               </span>
             </div>
-            <div className=" flex items-center justify-around bg-personal-one px-2 py-1 ">
-              <p>Github</p>
+            <div className=" flex items-center justify-around bg-personal-one px-2 py-1 group">
+              <Link
+                href="https://github.com/KAPrince99/stanect"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group-hover:text-orange-500"
+              >
+                Github
+              </Link>
               <span>
-                <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1" />
+                <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1 group-hover:text-orange-500 group-hover:rotate-0 transition-transform duration-300" />
               </span>
             </div>
           </div>
