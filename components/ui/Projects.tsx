@@ -2,7 +2,11 @@
 import { MoveLeft, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 
-import { sectionVariants, tapeVariants } from "@/lib/variants";
+import {
+  fadeRightVariants,
+  sectionVariants,
+  tapeVariants,
+} from "@/lib/variants";
 import Link from "next/link";
 
 export default function Projects() {
@@ -33,7 +37,7 @@ export default function Projects() {
           initial="hidden"
           whileInView="visible"
           whileHover="hover"
-          custom={0.1}
+          custom={0.3}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           viewport={{ once: true }}
           className="relative flex flex-col  p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-personal-two
@@ -44,11 +48,17 @@ export default function Projects() {
           md:w-[clamp(350px,60vw,1000px)]
           h-[clamp(240px,50vw,500px)] shadow-2xl shadow-personal-one"
         >
-          <p>
+          <motion.p
+            variants={fadeRightVariants}
+            initial="hidden"
+            whileInView="visible"
+            custom={0.5}
+            viewport={{ once: true }}
+          >
             Full-stack AI-powered voice companion designed to help users improve
             communication skills through interactive, real-time conversations
             with AI companions.
-          </p>
+          </motion.p>
           <div className="hidden xl:flex items-center justify-between my-8">
             {[
               "Nextjs",
@@ -156,7 +166,7 @@ export default function Projects() {
           initial="hidden"
           whileInView="visible"
           whileHover="hover"
-          custom={0.1}
+          custom={0.3}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           viewport={{ once: true }}
           className="relative flex flex-col md:ml-40 lg:ml-50 xl:ml-30 px-5 py-5 md:py-10 bg-personal-two
@@ -167,11 +177,17 @@ export default function Projects() {
           md:w-[clamp(350px,60vw,1000px)]
           h-[clamp(240px,50vw,500px)] shadow-2xl shadow-personal-one"
         >
-          <p>
+          <motion.p
+            variants={fadeRightVariants}
+            initial="hidden"
+            whileInView="visible"
+            custom={0.5}
+            viewport={{ once: true }}
+          >
             Full-stack e-commerce clothing application showcasing frontend UI,
             backend data handling, and real-world shopping flows built to
             replicate fivefourfive website.
-          </p>
+          </motion.p>
           <div className="hidden xl:flex items-center justify-between my-8">
             {["Nextjs", "supabase", "Clerk", "stripe", "framer-motion"].map(
               (stack, i) => (
@@ -193,16 +209,30 @@ export default function Projects() {
             )}
           </div>
           <div className="flex items-center justify-start gap-10 py-5 text-base lg:text-[24px] tracking-wide ">
-            <div className=" flex items-center justify-around bg-personal-one px-2 py-1 ">
-              <p>Production</p>
+            <div className=" flex items-center justify-around bg-personal-one px-2 py-1 group">
+              <Link
+                href="https://tiny45.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group-hover:text-orange-500"
+              >
+                Production
+              </Link>
               <span>
-                <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1" />
+                <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1 group-hover:text-orange-500 group-hover:rotate-0 transition-transform duration-300" />
               </span>
             </div>
-            <div className=" flex items-center justify-around bg-personal-one px-2 py-1 ">
-              <p>Github</p>
+            <div className=" flex items-center justify-around bg-personal-one px-2 py-1 group">
+              <Link
+                href="https://github.com/KAPrince99/tiny-45"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group-hover:text-orange-500"
+              >
+                Github
+              </Link>
               <span>
-                <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1" />
+                <MoveRight className="inline-block w-8 h-4 -rotate-25 -mt-1 group-hover:text-orange-500 group-hover:rotate-0 transition-transform duration-300" />
               </span>
             </div>
           </div>
