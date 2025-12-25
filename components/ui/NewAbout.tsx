@@ -67,7 +67,7 @@ export default function NewAbout() {
             whileHover="hover"
             custom={0.1}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: "all" }}
             className={`flex flex-col w-full p-4 md:p-5 lg:p-10 bg-personal-one
         tracking-tight lg:tracking-tighter leading-[2.1] mb-5 lg:mb-10
         md:leading-[2.1] font-satoshi font-normal text-gray-800/70
