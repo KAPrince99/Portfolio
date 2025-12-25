@@ -40,7 +40,6 @@ export default function Essentials() {
           whileHover="hover"
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          viewport={{ once: true }}
           className="relative flex flex-col space-y-15 lg:space-y-25 p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-white
        text-2xl md:text-3xl lg:text-5xl
            w-[clamp(350px,90vw,1000px)] 
@@ -62,9 +61,6 @@ export default function Essentials() {
             <h1>Openai</h1>
           </div>
           <div className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 rotate-40 md:rotate-40 lg:rotate-42 xl:rotate-40 shadow-2xl shadow-personal-one " />
-          {/* <div className="absolute left-200 top-6/6 bottom-0">
-          <InfiniteVerticalDots numDots={7} height="20" />
-        </div> */}
         </motion.section>
         <div className="relative hidden md:flex items-center md:gap-2 lg:gap-10 overflow-hidden ml-5 group ">
           <MoveLeft className="md:w-10 md:h-8 lg:w-15 lg:h-15 text-orange-500 " />
@@ -95,7 +91,6 @@ export default function Essentials() {
           whileHover="hover"
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          viewport={{ once: true }}
           className="relative flex flex-col md:ml-60 lg:ml-60 xl:ml-40 px-5 md:px-5 lg:px-10 py-5 md:py-10  bg-yellow-300 space-y-10 md:space-y-15 lg:space-y-20  font-satoshi font-medium  tracking-wide
           text-[clamp(1.5rem,5.5vw,3.75rem)]  
           w-[clamp(350px,90vw,1000px)] 

@@ -40,7 +40,6 @@ export default function Projects() {
           whileHover="hover"
           custom={0.3}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          viewport={{ once: true }}
           className="relative flex flex-col  p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-personal-two
         tracking-tight lg:tracking-tight leading-[2.1] mb-15 md:mb-20 lg:mb-30
         md:leading-[1.1] font-satoshi font-meduim text-gray-800
@@ -54,7 +53,6 @@ export default function Projects() {
             initial="hidden"
             whileInView="visible"
             custom={0.5}
-            viewport={{ once: true }}
           >
             Full-stack AI-powered voice companion designed to help users improve
             communication skills through interactive, real-time conversations
@@ -117,7 +115,6 @@ export default function Projects() {
             variants={tapeVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
             className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 shadow-2xl "
           />
           {/* <div className="absolute left-200 top-6/6 bottom-0">
@@ -169,7 +166,6 @@ export default function Projects() {
           whileHover="hover"
           custom={0.3}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          viewport={{ once: true }}
           className="relative flex flex-col md:ml-40 lg:ml-50 xl:ml-30 px-5 py-5 md:py-10 bg-personal-two
         tracking-tight lg:tracking-tight leading-[2.1]
         md:leading-[1.1] font-satoshi font-meduim text-gray-800
@@ -183,7 +179,6 @@ export default function Projects() {
             initial="hidden"
             whileInView="visible"
             custom={0.5}
-            viewport={{ once: true }}
           >
             Full-stack e-commerce clothing application showcasing frontend UI,
             backend data handling, and real-world shopping flows built to
@@ -242,7 +237,6 @@ export default function Projects() {
             variants={tapeVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
             className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 shadow-2xl "
           />
         </motion.section>
