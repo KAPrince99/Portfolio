@@ -56,7 +56,7 @@ export default function NewAbout() {
         <h1>ABOUT ME</h1>
       </div>
 
-      <section className="flex flex-col items-center justify-center ">
+      <section className="flex flex-col w-full items-center justify-center ">
         {passages.map((passage) => (
           <motion.section
             key={passage.id}
@@ -67,7 +67,7 @@ export default function NewAbout() {
             custom={0.1}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             viewport={{ once: true }}
-            className={`relative flex flex-col w-full p-4 md:p-5 lg:p-10 bg-personal-one
+            className={`flex flex-col w-full p-4 md:p-5 lg:p-10 bg-personal-one
         tracking-tight lg:tracking-tighter leading-[2.1] mb-5 lg:mb-10
         md:leading-[2.1] font-satoshi font-normal text-gray-800/70
         text-[clamp(1rem,4.5vw,3rem)]  

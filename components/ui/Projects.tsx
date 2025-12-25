@@ -3,6 +3,7 @@ import { MoveLeft, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { sectionVariants, tapeVariants } from "@/lib/variants";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -17,12 +18,14 @@ export default function Projects() {
         <h1>PROJECTS</h1>
       </div>
       <div className="my-5 md:hidden">
-        <a
+        <Link
           href="https://stanect.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           className={`block text-lg font-bold tracking-wide text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all font-satoshi`}
         >
           Stanect
-        </a>
+        </Link>
       </div>
       <section className="flex items-center md:gap-10 lg:gap-20">
         <motion.section
@@ -98,32 +101,38 @@ export default function Projects() {
         </motion.section>
         <div className="relative hidden md:flex items-center md:gap-2 lg:gap-10 overflow-hidden ml-5 group">
           <MoveLeft className="md:w-10 md:h-8 lg:w-15 lg:h-15 text-orange-500 lg:text-black group-hover:text-orange-500 lg:rotate-30 group-hover:rotate-0 transition-transform duration-300" />
-          <a
+          <Link
             href="https://stanect.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`block text-5xl font-bold tracking-wide text-orange-500 lg:text-black group-hover:text-orange-600  underline group-hover:no-underline transition-all font-satoshi `}
           >
             Stanect
-          </a>
+          </Link>
 
           <span className="absolute bottom-0 left-0 w-full h-[2px] md:h-[3px] bg-orange-500 transform translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
         </div>
       </section>
       <div className="my-5 md:hidden">
-        <a
+        <Link
           href="https://tiny45.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           className={`block text-lgfont-bold tracking-wide text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all font-satoshi`}
         >
           Tiny45
-        </a>
+        </Link>
       </div>
       <section className="flex items-center">
         <div className="relative hidden md:flex items-center  md:gap-2 lg:gap-10  overflow-hidden ml-5 group">
-          <a
+          <Link
             href="https://tiny45.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`block text-lg md:text-lg lg:text-5xl font-bold tracking-wider text-orange-500 lg:text-black group-hover:text-orange-600  underline group-hover:no-underline transition-all font-satoshi`}
           >
             Tiny45
-          </a>
+          </Link>
 
           <span className="absolute bottom-0 left-0 w-full h-[2px] md:h-[3px] bg-orange-500 transform translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
           <MoveRight className="md:w-10 md:h-8 lg:w-15 lg:h-15 text-orange-500 lg:text-black group-hover:text-orange-500 lg:rotate-30 group-hover:rotate-0 transition-transform duration-300" />
@@ -191,9 +200,6 @@ export default function Projects() {
             viewport={{ once: true }}
             className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 shadow-2xl "
           />
-          {/* <div className="absolute left-75 top-6/6 bottom-0">
-          <InfiniteVerticalDots numDots={30} height="100" />
-        </div> */}
         </motion.section>
       </section>
     </main>

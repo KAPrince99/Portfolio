@@ -3,6 +3,7 @@
 import { sectionVariants } from "@/lib/variants";
 import { motion } from "framer-motion";
 import { MoveLeft, MoveRight } from "lucide-react";
+import Link from "next/link";
 
 const stacks = [
   { id: "1", name: "Nextjs" },
@@ -101,13 +102,48 @@ export default function Essentials() {
           h-[clamp(240px,50vw,500px)] shadow-2xl shadow-personal-one"
         >
           <div className="flex justify-between items-center">
-            <h1>Github</h1>
-            <h1>LinkedIn</h1>
+            <Link
+              href="https://github.com/KAPrince99"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/prince-amanor-103368177/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </Link>
           </div>
-          <div className="flex items-center justify-center">Email</div>
+          <div className="flex items-center justify-center">
+            <Link
+              href="mailto:amanorprincekabutey@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email
+            </Link>
+          </div>
           <div className="flex justify-between items-center">
-            <h1>Twitter</h1>
-            <h1>Instagram</h1>
+            <h1>
+              {" "}
+              <Link
+                href="https://x.com/facultywave?s=21&t=EA7KVzb47NhFewv2bvQfpQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </Link>
+            </h1>
+            <Link
+              href="https://www.instagram.com/facultywave?igsh=bXRzd3B0ZW40Ymg0&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </Link>
           </div>
           <div className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 rotate-40 md:rotate-40 lg:rotate-42 xl:rotate-40 shadow-2xl shadow-personal-one " />
         </motion.section>
