@@ -35,7 +35,7 @@ export default function NewHero() {
         }
       ).to(circleRef.current, {
         x: -250,
-        duration: 5,
+        duration: 2,
         repeat: -1,
         yoyo: true,
         ease: "sine.inOut",
