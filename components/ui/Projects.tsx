@@ -65,7 +65,7 @@ export default function Projects() {
               "supabase",
               "Clerk",
               "paystack",
-              "framer-motion",
+              "motion",
             ].map((stack, i) => (
               <div
                 key={i}
@@ -185,7 +185,7 @@ export default function Projects() {
             replicate fivefourfive website.
           </motion.p>
           <div className="hidden xl:flex items-center justify-between my-8">
-            {["Nextjs", "supabase", "Clerk", "stripe", "framer-motion"].map(
+            {["Nextjs", "supabase", "Clerk", "stripe", "motion"].map(
               (stack, i) => (
                 <div
                   key={i}
