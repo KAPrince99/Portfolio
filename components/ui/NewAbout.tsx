@@ -8,8 +8,7 @@ const passages = [
     content: ` I started my journey into web development about six months ago,
               driven by a desire to build real, usable products. Before
               transitioning into web development, I explored machine learning
-              and deep learning using PyTorch.`,
-    margLeft: "0",
+              and deep learning using Tensorflow and then later to PyTorch.`,
   },
   {
     id: "2",
@@ -17,7 +16,6 @@ const passages = [
               ideas required a strong frontend to truly come to life. That led
               me to focus on web development, where I could be more creative and
               user-focused.`,
-    margLeft: "10",
   },
   {
     id: "3",
@@ -25,13 +23,11 @@ const passages = [
               for backend services, Tailwind CSS for styling, and Clerk for
               authentication. I especially enjoy integrating AI features into
               web applications to create meaningful user experiences.`,
-    margLeft: "20",
   },
   {
     id: "4",
     content: `  I’m currently focused on improving my skills by building real
               projects and writing clean, maintainable code.`,
-    margLeft: "30",
   },
   {
     id: "5",
@@ -39,7 +35,6 @@ const passages = [
               building real projects that reflect how production applications
               work. My approach is to learn by building, shipping, and improving
               based on feedback.`,
-    margLeft: "40",
   },
 ];
 
