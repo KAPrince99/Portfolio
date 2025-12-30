@@ -41,7 +41,7 @@ export default function Essentials() {
           whileHover="hover"
           custom={0.1}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="relative flex flex-col space-y-15 lg:space-y-25 p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-white
+          className="relative flex flex-col space-y-15 lg:space-y-20 p-4 md:p-5 lg:p-10 md:-ml-2 lg:ml-4 xl:ml-2 bg-white
        text-2xl md:text-3xl lg:text-5xl
            w-[clamp(350px,90vw,1000px)] 
           md:w-[clamp(350px,60vw,1000px)]
@@ -51,6 +51,11 @@ export default function Essentials() {
             <h1>Nextjs</h1>
             <h1>React</h1>
             <h1>Typescript</h1>
+          </div>
+          <div className="flex justify-between items-center">
+            <h1>PostgressSQL</h1>
+            <h1>REST APIs</h1>
+            <h1>Python</h1>
           </div>
           <div className="flex justify-between items-center">
             <h1>Supabase</h1>

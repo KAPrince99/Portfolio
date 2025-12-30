@@ -14,27 +14,15 @@ const passages = [
     id: "2",
     content: ` While working with machine learning, I realized that most of my
               ideas required a strong frontend to truly come to life. That led
-              me to focus on web development, where I could be more creative and
-              user-focused.`,
+              me to focus on web development.That realization led me to focus on web development, where I could be more creative and user-focused.`,
   },
   {
     id: "3",
-    content: `  Today, I build applications using React and Next.js, with Supabase
-              for backend services, Tailwind CSS for styling, and Clerk for
-              authentication. I especially enjoy integrating AI features into
-              web applications to create meaningful user experiences.`,
+    content: `  Today, I build full-stack applications using React and Next.js, with Supabase for backend services, Tailwind CSS for styling, and Clerk for authentication. I especially enjoy integrating AI-powered features into web applications to create meaningful user experiences. One example is Stanect, an AI-powered voice companion designed to help users improve communication skills through real-time conversational practice.`,
   },
   {
     id: "4",
-    content: `  I’m currently focused on improving my skills by building real
-              projects and writing clean, maintainable code.`,
-  },
-  {
-    id: "5",
-    content: `  While I don’t have formal industry experience yet, I’ve focused on
-              building real projects that reflect how production applications
-              work. My approach is to learn by building, shipping, and improving
-              based on feedback.`,
+    content: ` I’m currently focused on improving my skills by building real projects and writing clean, maintainable, production-style code. While I don’t yet have formal industry experience, I’ve intentionally focused on shipping real applications that mirror how modern products are built. My approach is simple: learn by building, ship consistently, and improve through feedback.`,
   },
 ];
 
