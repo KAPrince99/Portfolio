@@ -76,7 +76,7 @@ export const tapeVariants: Variants = {
       type: "spring",
       stiffness: 400,
       damping: 15,
-      delay: 1.2,
+      delay: 1,
     },
   }),
 };

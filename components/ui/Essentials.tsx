@@ -5,18 +5,6 @@ import { motion } from "framer-motion";
 import { MoveLeft, MoveRight } from "lucide-react";
 import Link from "next/link";
 
-const stacks = [
-  { id: "1", name: "Nextjs" },
-  { id: "2", name: "React" },
-  { id: "3", name: "Python" },
-  { id: "4", name: "GSAP" },
-  { id: "5", name: "Motion" },
-  { id: "6", name: "Tailwind" },
-  { id: "7", name: "Supabase" },
-  { id: "8", name: "OpenAi" },
-  { id: "9", name: "Clerk" },
-];
-
 export default function Essentials() {
   return (
     <main

@@ -19,7 +19,7 @@ export default function Projects() {
       <div
         className={`my-15 flex items-center justify-center w-full font-satoshi  text-[24px] md:text-[30px] lg:text-[48px] font-bold tracking-wider text-black/60  space-x-2 line-through decoration-orange-500 decoration-2 md:decoration-4 lg:decoration-6`}
       >
-        <span className="text-[35px] leading-none flex items-center justify-center translate-y-[2px]"></span>{" "}
+        <span className="text-[35px] leading-none flex items-center justify-center translate-y-0.5"></span>{" "}
         <h1>PROJECTS</h1>
       </div>
       <div className="my-5 md:hidden">
@@ -72,7 +72,7 @@ export default function Projects() {
                 className="flex items-center gap-2 border-2 border-black/30 px-3 py-1 rounded-sm text-black/60 bg-white/10"
               >
                 {/* Use a span with leading-none to remove extra space around the asterisk */}
-                <span className="text-[24px] leading-none flex items-center justify-center translate-y-[2px]">
+                <span className="text-[24px] leading-none flex items-center justify-center translate-y-0.5">
                   *
                 </span>
 
@@ -117,9 +117,6 @@ export default function Projects() {
             whileInView="visible"
             className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 shadow-2xl "
           />
-          {/* <div className="absolute left-200 top-6/6 bottom-0">
-          <InfiniteVerticalDots numDots={7} height="20" />
-        </div> */}
         </motion.section>
         <div className="relative hidden md:flex items-center md:gap-2 lg:gap-10 overflow-hidden ml-5 group">
           <MoveLeft className="md:w-10 md:h-8 lg:w-15 lg:h-15 text-orange-500 lg:text-black group-hover:text-orange-500 lg:rotate-30 group-hover:rotate-0 transition-transform duration-300" />
@@ -192,7 +189,7 @@ export default function Projects() {
                   className="flex items-center gap-2 border-2 border-black/30 px-3 py-1 rounded-sm text-black/60 bg-white/10"
                 >
                   {/* Use a span with leading-none to remove extra space around the asterisk */}
-                  <span className="text-[24px] leading-none flex items-center justify-center translate-y-[2px]">
+                  <span className="text-[24px] leading-none flex items-center justify-center translate-y-0.5">
                     *
                   </span>
 
