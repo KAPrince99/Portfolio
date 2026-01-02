@@ -101,7 +101,7 @@ export default function Essentials() {
               Github
             </Link>
             <Link
-              href="https://www.linkedin.com/in/prince-amanor-103368177/"
+              href="https://www.linkedin.com/in/prince-amanor-kabutey-103368177/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -110,7 +110,7 @@ export default function Essentials() {
           </div>
           <div className="flex items-center justify-center">
             <Link
-              href="mailto:amanorprincekabutey@gmail.com"
+              href="mailto:princeamanorkabutey@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
