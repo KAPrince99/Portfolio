@@ -121,7 +121,7 @@ export default function Projects() {
         <div className="relative hidden md:flex items-center md:gap-2 lg:gap-10 overflow-hidden ml-5 group">
           <MoveLeft className="md:w-10 md:h-8 lg:w-15 lg:h-15 text-orange-500 lg:text-black group-hover:text-orange-500 lg:rotate-30 group-hover:rotate-0 transition-transform duration-300" />
           <Link
-            href="https://stanect.vercel.app/"
+            href="https://www.stanect.com/"
             target="_blank"
             rel="noopener noreferrer"
             className={`block text-5xl font-bold tracking-wide text-orange-500 lg:text-black group-hover:text-orange-600  underline group-hover:no-underline transition-all font-satoshi `}
