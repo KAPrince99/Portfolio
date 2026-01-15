@@ -41,19 +41,18 @@ export default function Dock() {
   const lenis = useLenis();
 
   const scrollToSection = (id: string) => {
-    // lenis.scrollTo handles the selection, offset, and easing automatically
     lenis?.scrollTo(`#${id}`, {
-      offset: 0, // Adjust this if you have a fixed header (e.g., -80)
-      duration: 1.5, // Matches your smooth scroll feel
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // High-end "out-expo" easing
-      immediate: false, // Set to true if you want it to jump without animation
+      offset: 0,
+      duration: 1.5,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      immediate: false,
     });
   };
   return (
     <section className="fixed bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-50 animate-fade-up animation-delay-1200 w-[95%] max-w-[600px]">
       <motion.div
         initial={{ scale: 1 }}
-        whileHover={{ scale: 1.02 }} // Reduced scale on hover for better stability
+        whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.4 }}
         className="
           bg-black/30
@@ -82,8 +81,7 @@ export default function Dock() {
               <Box
                 key={box.id}
                 box={box}
-                // Pass internal box sizing if your Box component supports it,
-                // otherwise ensure your Box component handles mobile widths.
+                
                 onClick={() => scrollToSection(box.id)}
               />
             ))}

@@ -24,7 +24,7 @@ export default function Projects() {
       </div>
       <div className="my-5 md:hidden">
         <Link
-          href="https://stanect.vercel.app/"
+          href="https://www.stanect.com/"
           target="_blank"
           rel="noopener noreferrer"
           className={`block text-lg font-bold tracking-wide text-orange-500 lg:text-black hover:text-orange-600  underline hover:no-underline transition-all font-satoshi`}
@@ -86,7 +86,7 @@ export default function Projects() {
           <div className="flex items-center justify-start gap-10 py-5 text-base lg:text-[24px] tracking-wide ">
             <div className=" flex items-center justify-around bg-personal-one px-2 py-1 group">
               <Link
-                href="https://stanect.vercel.app/"
+                href="https://www.stanect.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group-hover:text-orange-500"
