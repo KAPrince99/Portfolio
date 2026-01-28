@@ -5,24 +5,19 @@ import { motion } from "framer-motion";
 const passages = [
   {
     id: "1",
-    content: ` I started my journey into web development about six months ago,
-              driven by a desire to build real, usable products. Before
-              transitioning into web development, I explored machine learning
-              and deep learning using Tensorflow and then later to PyTorch.`,
+    content: ` I’m a frontend-focused full-stack engineer and solo founder who builds real, production-ready web products from the ground up. I founded and single-handedly developed Stanect, an AI-powered voice companion helping users practice and improve real-world communication skills, now used by over 200 beta users.`,
   },
   {
     id: "2",
-    content: ` While working with machine learning, I realized that most of my
-              ideas required a strong frontend to truly come to life. That led
-              me to focus on web development.That realization led me to focus on web development, where I could be more creative and user-focused.`,
+    content: `  I led the entire stack, designing responsive, intuitive interfaces with React, Next.js, and Tailwind CSS, integrating AI features, and building scalable backend services with Supabase and Clerk.`,
   },
   {
     id: "3",
-    content: `  Today, I build full-stack applications using React and Next.js, with Supabase for backend services, Tailwind CSS for styling, and Clerk for authentication. I especially enjoy integrating AI-powered features into web applications to create meaningful user experiences. One example is Stanect, an AI-powered voice companion designed to help users improve communication skills through real-time conversational practice.`,
+    content: `  As a solo founder, I thrive at the intersection of product, technology, and user experience, shipping polished, high-performance applications that solve real problems and delight users. My approach combines hands-on engineering, AI integration, and continuous iteration, delivering solutions that are both scalable and impactful.`,
   },
   {
     id: "4",
-    content: ` I’m currently focused on improving my skills by building real projects and writing clean, maintainable, production-style code. While I don’t yet have formal industry experience, I’ve intentionally focused on shipping real applications that mirror how modern products are built. My approach is simple: learn by building, ship consistently, and improve through feedback.`,
+    content: ` I’m currently focused on improving my skills by building real projects and writing clean, maintainable, production-style code,shipping real applications that mirror how modern products are built. My approach is simple: learn by building, ship consistently, and improve through feedback.`,
   },
 ];
 
