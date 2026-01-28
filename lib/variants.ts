@@ -73,10 +73,12 @@ export const tapeVariants: Variants = {
     rotate: 40,
 
     transition: {
+      duration: 0.5,
       type: "spring",
       stiffness: 400,
       damping: 15,
       delay: 1,
+      ease: "easeOut",
     },
   }),
 };

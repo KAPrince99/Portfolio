@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import TiltedCard from "../TiltedCard";
 
 export default function NewHero() {
   const circleRef = useRef(null);
@@ -32,7 +33,7 @@ export default function NewHero() {
           duration: 1.5,
           delay: 1.8,
           ease: "back.out(1.2)",
-        }
+        },
       ).to(circleRef.current, {
         x: -250,
         duration: 2,
@@ -41,12 +42,12 @@ export default function NewHero() {
         ease: "sine.inOut",
       });
     },
-    { scope: circleRef }
+    { scope: circleRef },
   );
   return (
     <main
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center lg:justify-start "
+      className="min-h-screen flex flex-col justify-center items-center lg:justify-start lg:space-y-70 "
     >
       <div className="flex justify-center items-center px-5">
         <motion.section
@@ -162,6 +163,23 @@ export default function NewHero() {
             className="absolute h-4 w-8 md:h-6 md:w-15 lg:h-8 lg:w-18 xl:h-10 xl:w-24 bg-orange-500 -right-3 md:-right-10 -top-2 shadow-2xl "
           />
         </motion.section>
+      </div>
+      <div className="relative hidden lg:flex">
+        <TiltedCard
+          imageSrc="/prince_amanor_kabutey_photo.jpg"
+          altText="Prince Amanor Kabutey"
+          captionText="Prince Amanor Kabutey / 26"
+          scaleOnHover={1.1}
+          rotateAmplitude={12}
+          showMobileWarning={false}
+          showTooltip
+          displayOverlayContent
+          overlayContent={
+            <p className="absolute top-5 left-1/4 bg-black/60 px-2 py-1 rounded-md text-white text-lg font-semibold">
+              PRINCE AMANOR KABUTEY / 26
+            </p>
+          }
+        />
       </div>
 
       <div className="pb-20 md:pb-10 w-full flex justify-center items-center">
